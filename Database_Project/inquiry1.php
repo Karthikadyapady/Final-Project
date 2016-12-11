@@ -1,26 +1,10 @@
-Dan's Tools
-cleancss.com/html-beautify
-HTML Formatter
-Development
-Encode/Decoders
-Formatters
-Images
-Internet
-Minifiers
-SEO
-Related: CSS FormatterJavascript FormatterPHP Formatter
-     
-
-
 1
 <!DOCTYPE html>
 2
 <html lang="en-us">
 3
 <meta charset="utf-8" />
-4
-​
-5
+
 <head>
 6
     <title>Inquiry Form</title>
@@ -103,47 +87,3 @@ Related: CSS FormatterJavascript FormatterPHP Formatter
 45
                     </li>
 
-Format Code
-
-
-
-
-HTML <style>, <script> formatting: End script and style with newline?  Detect packers and obfuscators?  Keep array indentation?  Break lines on chained methods?  Space before conditional: "if(x)" / "if (x)"  Unescape printable chars encoded as \xNN or \uNNNN?  Use JSLint-happy formatting tweaks?
-HTML Formatter
-Enter your messy, minified, or obfuscated HTML into the field above to have it cleaned up and made pretty. The editor above also contains helpful line numbers and syntax highlighting. There are many option to tailor the beautifier to your personal formatting tastes.
-
-When do you use HTML Formatter
-Often when writing HTML your indentation, spacing, and other formatting can become a bit disorganized. It is also common for multiple developers to work on a single project who have different formatting techniques.  This tool is helpful for making the formatting of a file consistent. It is also common for HTML to be minified or obfuscated. You can use this tool to make that code look pretty and readable so it is easier to edit.
-
-Examples
-The minified HTML below:
-
-                                                    <ul class="dropdown-menu">
-<li><a href="/javascript-minify">Javascript Minify</a></li><li><a href="/css-minify">CSS Minify</a></li><li><a href="/css-beautify">CSS Beautify</a></li><li><a href="/javascript-beautify">Javascript Beautify</a></li><li><a href="/html-beautify">HTML Beautify</a></li><li><a href="/perl-beautify">Perl Beautify</a></li><li><a href="/php-beautify">PHP Beautify</a></li><li><a href="/go-beautify">GO Beautify</a></li><li><a href="/ruby-beautify">Ruby Beautify</a></li><li><a href="/sql-beautify">SQL Beautify</a></li><li><a href="/xml-beautify">XML Beautify</a></li></ul>
-Becomes this beautified :
-
-<ul class="dropdown-menu">
-    <li><a href="/javascript-minify">Javascript Minify</a>
-    </li>
-    <li><a href="/css-minify">CSS Minify</a>
-    </li>
-    <li><a href="/css-beautify">CSS Beautify</a>
-    </li>
-    <li><a href="/javascript-beautify">Javascript Beautify</a>
-    </li>
-    <li><a href="/html-beautify">HTML Beautify</a>
-    </li>
-    <li><a href="/perl-beautify">Perl Beautify</a>
-    </li>
-    <li><a href="/php-beautify">PHP Beautify</a>
-    </li>
-    <li><a href="/go-beautify">GO Beautify</a>
-    </li>
-    <li><a href="/ruby-beautify">Ruby Beautify</a>
-    </li>
-    <li><a href="/sql-beautify">SQL Beautify</a>
-    </li>
-    <li><a href="/xml-beautify">XML Beautify</a>
-    </li>
-</ul>
-© Dan's Tools | Contact | About | For more dev tools, check out danstools.com
