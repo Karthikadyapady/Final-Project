@@ -3,11 +3,11 @@
 //Connecting to the database
 include 'include.php';
 
-//Getting the Inquiry_ID based on the row selected 
-$Inquiry_ID = $_GET['Inquiry_ID'];
+//Getting the ID based on the row selected 
+$ID = $_GET['ID'];
 		
 //Query to delete the row with that info_id from the database 
-$sql = "DELETE FROM bin WHERE Inquiry_ID=$Inquiry_ID";
+$sql = "DELETE FROM bin WHERE ID=$ID";
 $result = $conn->query($sql);
 if ($conn->query($sql) === TRUE) {
     echo "Record deleted successfully";

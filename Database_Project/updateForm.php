@@ -4,16 +4,16 @@
 
 <head>
     <title>Inquiry Form</title>
-    <?php include 'include.php'; $Inquiry_ID=$ _GET[ 'Inquiry_ID']; $query3="
+    <?php include 'include.php'; $ID=$ _GET[ 'ID']; $query3="
 SELECT 
   First_Name, Last_Name, Username, Age, Gender, Profession, Apt_type
 FROM
   users JOIN userinfo
 ON
-  users.Inquiry_ID = userinfo.Inquiry_ID
+  users.ID = userinfo.ID
   
  WHERE
-  userinfo.Inquiry_ID='$Inquiry_ID'" ; $result3=$ conn->query($query3); $row=$result3->fetch_assoc(); $Firstname=$row["First_Name"]; $Lastname=$row["Last_Name"]; $Username=$row["Username"]; $Age=$row["Age"]; $Gender=$row["Gender"]; $Profession=$row["Profession"]; $Apt_type=$row["Apt_type"]; ?>
+  userinfo.ID='$ID'" ; $result3=$ conn->query($query3); $row=$result3->fetch_assoc(); $Firstname=$row["First_Name"]; $Lastname=$row["Last_Name"]; $Username=$row["Username"]; $Age=$row["Age"]; $Gender=$row["Gender"]; $Profession=$row["Profession"]; $Apt_type=$row["Apt_type"]; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Inquery.css">
 </head>
@@ -55,7 +55,7 @@ ON
                         <input type="text" required class="text" value="<?php echo $Gender; ?>" name="Gender" />
                     </li>
                     <li>
-                        <input hidden value="<?php echo $Inquiry_ID; ?>" name="Inquiry_ID" />
+                        <input hidden value="<?php echo $ID; ?>" name="ID" />
                     </li>
                     <li>
                         <input type="submit" value="Update" class="btn">

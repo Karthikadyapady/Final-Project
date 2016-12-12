@@ -65,16 +65,16 @@
             <th>Delete</th>
             <th>Update</th>
         </tr>
-        <?php if($category=='First Name' ){ $sql="SELECT First_Name, Last_Name, Username, userinfo.Inquiry_ID, Info_ID, Age, Gender, Profession, Apt_type
+        <?php if($category=='First Name' ){ $sql="SELECT First_Name, Last_Name, Username, userinfo.ID, ID, Age, Gender, Profession, Apt_type
             FROM
               users JOIN userinfo
             ON
-              users.Inquiry_ID = userinfo.Inquiry_ID
-			ORDER BY First_Name DESC" ; } else{ $sql="SELECT First_Name, Last_Name, Username, userinfo.Inquiry_ID, Info_ID, Age, Gender, Profession, Apt_type
+              users.ID = userinfo.ID
+			ORDER BY First_Name DESC" ; } else{ $sql="SELECT First_Name, Last_Name, Username, userinfo.ID, ID, Age, Gender, Profession, Apt_type
             FROM
               users JOIN userinfo
             ON
-              users.Inquiry_ID = userinfo.Inquiry_ID
+              users.ID = userinfo.ID
 			ORDER BY Last_Name DESC" ; } $result=$ conn->query($sql); if ($result->num_rows > 0) { $sn=1; // output data of each row while($row = $result->fetch_assoc()) { //Displaying all the data as a table row echo "
         <tr>
             <td>".$sn."</td>
@@ -86,12 +86,12 @@
             <td>".$row['Profession']."</td>
             <td>".$row['Apt_type']."</td>
             <td>
-                <a href=delete.php?Inquiry_ID=" . $row['Inquiry_ID']  .">
+                <a href=delete.php?ID=" . $row['ID']  .">
                     <button type=\ "button\" class=\ "btn\">Delete</button>
                 </a>
             </td>
             <td>
-                <a href=updateForm.php?Inquiry_ID=" . $row['Inquiry_ID']  .">
+                <a href=updateForm.php?ID=" . $row['ID']  .">
                     <button type=\ "button\"class=\ "btn\">Update</button>
                 </a>
             </td>

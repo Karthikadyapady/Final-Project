@@ -23,13 +23,13 @@
             <th>Apartment Type</th>
             <th>Permanently Delete</th>
         </tr>
-        <?php $i=1; //Variable to check all info_ids $sn=1; //Variable to print the serial number while ($i<1000) { //Checking through all the Inquiry_IDs $query2="
+        <?php $i=1; //Variable to check all IDs $sn=1; //Variable to print the serial number while ($i<1000) { //Checking through all the IDs $query2="
             SELECT 
               ID
             FROM
               bin
             WHERE
-              Inquiry_ID='$i'" ; $result2=$conn->query($query2); //Execute only if a row with that info_id present in the database if($row=$result2->fetch_assoc()){ //Query to retrieve all the information from the database $query3 = " SELECT First_Name, Last_Name, Username, Inquiry_ID, Info_ID, Age, Gender, Profession, Apt_type FROM bin WHERE Inquiry_ID='$i'"; $result3 = $conn->query($query3); $row=$result3->fetch_assoc(); //Storing all the retrieved information in PHP variables $Info_ID=$row["Info_ID"]; $Inquiry_ID=$row["Inquiry_ID"]; $Firstname=$row["First_Name"]; $Lastname=$row["Last_Name"]; $Username=$row["Username"]; $Age=$row["Age"]; $Gender=$row["Gender"]; $Profession=$row["Profession"]; $Apt_type=$row["Apt_type"]; //Displaying all the data as a table row echo "
+              ID='$i'" ; $result2=$conn->query($query2); //Execute only if a row with that ID present in the database if($row=$result2->fetch_assoc()){ //Query to retrieve all the information from the database $query3 = " SELECT First_Name, Last_Name, Username, ID, ID, Age, Gender, Profession, Apt_type FROM bin WHERE ID='$i'"; $result3 = $conn->query($query3); $row=$result3->fetch_assoc(); //Storing all the retrieved information in PHP variables $ID=$row["ID"]; $ID=$row["ID"]; $Firstname=$row["First_Name"]; $Lastname=$row["Last_Name"]; $Username=$row["Username"]; $Age=$row["Age"]; $Gender=$row["Gender"]; $Profession=$row["Profession"]; $Apt_type=$row["Apt_type"]; //Displaying all the data as a table row echo "
         <tr>
             <td>".$sn."</td>
             <td>".$Firstname."</td>
@@ -40,11 +40,11 @@
             <td>".$Profession."</td>
             <td>".$Apt_type."</td>
             <td>
-                <a href=perm_delete.php?Inquiry_ID=" . $Inquiry_ID  .">
+                <a href=perm_delete.php?ID=" . $ID  .">
                     <button type=\ "button\" class=\ "btn\">Delete Permanently</button>
                 </a>
             </td>
-        </tr>"; $sn++; //incrementing the serial number, if the row is printed } $i++; //incrementing variable to check the next inquiry_id after each pass } ?>
+        </tr>"; $sn++; //incrementing the serial number, if the row is printed } $i++; //incrementing variable to check the next ID after each pass } ?>
     </table>
 </body>
 

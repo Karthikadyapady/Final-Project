@@ -2,10 +2,10 @@
 //Connecting to the database
 	include 'include.php';
 	
-//Getting the Inquiry_ID and other information based on the row selected
+//Getting the ID and other information based on the row selected
 	
 	//Table 1
-	$Inquiry_ID = $_POST['Inquiry_ID'];
+	$ID = $_POST['ID'];
 	$Firstname = $_POST['Firstname'];
 	$Lastname = $_POST['Lastname'];
 	$Username = $_POST['Username'];
@@ -26,7 +26,7 @@
 
 
 	$sql1 =  "UPDATE users SET First_name='$Firstname2', Last_name='$Lastname2', Username = '$Username2'
-  WHERE Inquiry_ID = $Inquiry_ID";
+  WHERE ID = $ID";
 	
 	if ($conn->query($sql1) === TRUE) {
 		echo "Record updated successfully";
@@ -35,7 +35,7 @@
 	}
 
 	$sql2 =  "UPDATE userinfo SET Age='$Age', Profession='$Profession2', Apt_type = '$Apt_type', Gender='$Gender'
-  WHERE Inquiry_ID = $Inquiry_ID";
+  WHERE ID = $ID";
 	
 	if ($conn->query($sql2) === TRUE) {
 		echo "Record updated successfully";

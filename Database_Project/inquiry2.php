@@ -31,7 +31,7 @@
                         $result1 = $conn->query($query1);
                         $i=1;
                         while ($usernames = $result1->fetch_assoc()) {
-                        $query2 = "SELECT Username from users WHERE Inquiry_ID=$i";
+                        $query2 = "SELECT Username from users WHERE ID=$i";
                         $result2 = $conn->query($query2);
                         $row=$result2->fetch_assoc();
                         $username=$row["Username"];
