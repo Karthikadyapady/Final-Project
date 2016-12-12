@@ -68,4 +68,8 @@
     </div>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> fa23c0c7105ea9acecfb26721a2553c1b1141eba
