@@ -91,7 +91,7 @@
                     <button type=\ "button\"class=\ "btn\">Update</button>
                 </a>
             </td>
-        </tr>"; $sn++; //incrementing the serial number, if the row is printed } $i++; //incrementing variable to check the next ID after each pass } ?>
+        </tr>"; $sn++;  //incrementing the serial number, if the row is printed } $i++; //incrementing variable to check the next ID after each pass } ?>
     </table>
 </body>
 
